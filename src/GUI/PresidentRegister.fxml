@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Integration.StatusController">
+    <children>
+        <ImageView fitHeight="310.0" fitWidth="551.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/StatusRegisterBackground.jpg" />
+            </image>
+        </ImageView>
+        <TextField id="electedTillText" fx:id="netWorthText" layoutX="55.0" layoutY="190.0" prefHeight="29.0" prefWidth="120.0" promptText="NetWorth" style="-fx-background-color: #FEE715FF;" />
+        <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="78.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/president.jpeg" />
+            </image>
+        </ImageView>
+      <Button id="registerPresident" fx:id="registerPresident" layoutX="439.0" layoutY="269.0" mnemonicParsing="false" onAction="#PresidentRegister" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #FEE715FF;" text="Register" />
+      <DatePicker fx:id="electedTillDate" layoutX="55.0" layoutY="148.0" prefHeight="26.0" prefWidth="120.0" promptText="Elected Till" />
+    </children>
+</AnchorPane>

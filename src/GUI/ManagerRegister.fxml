@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Integration.StatusController">
+    <children>
+        <ImageView fitHeight="300.0" fitWidth="538.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/StatusRegisterBackground.jpg" />
+            </image>
+        </ImageView>
+        <TextField id="strengthText" fx:id="strengthText" layoutX="55.0" layoutY="142.0" prefHeight="29.0" prefWidth="120.0" promptText="Strengths" style="-fx-background-color: #FEE715FF;" />
+        <ImageView fitHeight="93.0" fitWidth="93.0" layoutX="68.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/manager.jpg" />
+            </image>
+        </ImageView>
+        <Button id="registerManager" fx:id="registerManager" layoutX="429.0" layoutY="259.0" mnemonicParsing="false" onAction="#managerRegister" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #FEE715FF;" text="Register" />
+    </children>
+</AnchorPane>

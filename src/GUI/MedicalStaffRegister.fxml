@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Integration.MedicalStaffRegisterController">
+    <children>
+        <ImageView fitHeight="300.0" fitWidth="538.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/StatusRegisterBackground.jpg" />
+            </image>
+        </ImageView>
+        <TextField id="typeText" fx:id="typeText" layoutX="55.0" layoutY="142.0" prefHeight="29.0" prefWidth="120.0" promptText="Type" style="-fx-background-color: #FEE715FF;" />
+        <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="76.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/Doctor.jpeg" />
+            </image>
+        </ImageView>
+        <Button id="registerMedicalStaff" fx:id="registerMedicalStaff" layoutX="429.0" layoutY="259.0" mnemonicParsing="false" onAction="#medicalStaffRegister" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #FEE715FF;" text="Register" />
+      <TextField id="teamIDText" fx:id="teamIDText" layoutX="55.0" layoutY="187.0" prefHeight="29.0" prefWidth="120.0" promptText="TeamID" style="-fx-background-color: #FEE715FF;" />
+      <Button id="showTeamBtn" fx:id="showTeamBtn" layoutX="192.0" layoutY="189.0" mnemonicParsing="false" onAction="#medicalStaffView" text="Show Teams" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Integration.PlayerRegisterController">
+    <children>
+        <ImageView fitHeight="300.0" fitWidth="538.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/StatusRegisterBackground.jpg" />
+            </image>
+        </ImageView>
+        <TextField id="positionsText" fx:id="positionsText" layoutX="112.0" layoutY="96.0" prefHeight="26.0" prefWidth="120.0" promptText="Positions" style="-fx-background-color: #FEE715FF;" />
+        <ImageView fitHeight="95.0" fitWidth="108.0" layoutX="112.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/player.jpg" />
+            </image>
+        </ImageView>
+        <Button id="registerPlayer" fx:id="registerPlayer" layoutX="429.0" layoutY="259.0" mnemonicParsing="false" onAction="#PlayerRegister" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #FEE715FF;" text="Register" />
+        <TextField id="injuryDetaislText" fx:id="injuryDetailsText" layoutX="112.0" layoutY="142.0" prefHeight="26.0" prefWidth="120.0" promptText="Injury Details" style="-fx-background-color: #FEE715FF;" />
+        <TextField id="suspensionsText" fx:id="suspensionsText" layoutX="112.0" layoutY="186.0" prefHeight="26.0" prefWidth="120.0" promptText="Suspensions" style="-fx-background-color: #FEE715FF;" />
+      <TextField id="scoutIDText" fx:id="scoutIDText" layoutX="302.0" layoutY="96.0" prefHeight="26.0" prefWidth="120.0" promptText="Scout ID" style="-fx-background-color: #FEE715FF;" />
+      <TextField id="teamIDText" fx:id="teamIDText" layoutX="302.0" layoutY="142.0" prefHeight="26.0" prefWidth="120.0" promptText="Team ID" style="-fx-background-color: #FEE715FF;" />
+      <RadioButton id="yesRadio" fx:id="radioBtn1" layoutX="438.0" layoutY="193.0" mnemonicParsing="false" prefHeight="5.0" prefWidth="10.0" text="RadioButton">
+         <toggleGroup>
+            <ToggleGroup fx:id="Available" />
+         </toggleGroup>
+      </RadioButton>
+      <Label layoutX="335.0" layoutY="191.0" text="Availability" textFill="#ff7c00">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <RadioButton id="noRadio" fx:id="radioBtn2" layoutX="477.0" layoutY="193.0" mnemonicParsing="false" prefHeight="5.0" prefWidth="10.0" text="RadioButton" toggleGroup="$Available" />
+      <Label layoutX="437.0" layoutY="216.0" prefHeight="18.0" prefWidth="30.0" text="Yes" textFill="#6cff00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="474.0" layoutY="216.0" prefHeight="18.0" prefWidth="30.0" text="No" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="436.0" layoutY="96.0" mnemonicParsing="false" onAction="#PlayerScoutView" text="Show Scouts" />
+      <Button layoutX="435.0" layoutY="137.0" mnemonicParsing="false" onAction="#PlayerTeamView" text="Show Teams" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Integration.ArenaAdd">
+    <children>
+        <ImageView fx:id="MaintenanceDate" fitHeight="310.0" fitWidth="551.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/StatusRegisterBackground.jpg" />
+            </image>
+        </ImageView>
+        <TextField id="adminSkillsText" fx:id="MaintenanceTxt" layoutX="55.0" layoutY="196.0" prefHeight="30.0" prefWidth="141.0" promptText="Maintenance Due In" style="-fx-background-color: #FEE715FF;" />
+        <Button id="registerAdmin" layoutX="439.0" layoutY="269.0" mnemonicParsing="false" onAction="#AddArena" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #FEE715FF;" text="Add" />
+        <Button layoutX="13.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="14.0" style="-fx-background-radius: 30; -fx-background-color: #2D142C;" text="&lt;" textFill="#3fdbec">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </Button>
+      <TextField id="adminSkillsText" fx:id="HoursToTxt" layoutX="357.0" layoutY="137.0" prefHeight="29.0" prefWidth="120.0" promptText="Visiting Hours To" style="-fx-background-color: #FEE715FF;" />
+      <TextField id="adminSkillsText" fx:id="HoursFromTxt" layoutX="357.0" layoutY="88.0" prefHeight="29.0" prefWidth="120.0" promptText="Visiting Hours From" style="-fx-background-color: #FEE715FF;" />
+      <TextField id="adminSkillsText" fx:id="ArenaID" layoutX="55.0" layoutY="88.0" prefHeight="29.0" prefWidth="120.0" promptText="ArenaID" style="-fx-background-color: #FEE715FF;" />
+      <TextField id="adminSkillsText" fx:id="ArenaName" layoutX="55.0" layoutY="139.0" prefHeight="29.0" prefWidth="120.0" promptText="Arena Name" style="-fx-background-color: #FEE715FF;" />
+    </children>
+</AnchorPane>

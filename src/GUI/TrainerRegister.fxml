@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Integration.TrainerRegisterController">
+    <children>
+        <ImageView fitHeight="310.0" fitWidth="551.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/StatusRegisterBackground.jpg" />
+            </image>
+        </ImageView>
+        <TextField id="gradeText" fx:id="typeOfPlayerText" layoutX="40.0" layoutY="179.0" prefHeight="30.0" prefWidth="150.0" promptText="Type Of Player You Train" style="-fx-background-color: #FEE715FF;" />
+        <ImageView fitHeight="63.0" fitWidth="101.0" layoutX="65.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/trainer.jpg" />
+            </image>
+        </ImageView>
+        <TextField id="typeOfPlayerText" fx:id="gradeText" layoutX="55.0" layoutY="137.0" prefHeight="29.0" prefWidth="120.0" promptText="Grade" style="-fx-background-color: #FEE715FF;" />
+      <Button id="registerTrainer" fx:id="registerTrainer" layoutX="439.0" layoutY="269.0" mnemonicParsing="false" onAction="#TrainerRegister" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #FEE715FF;" text="Register" />
+      <TextField id="typeOfPlayerText" fx:id="TrainerTeamID" layoutX="40.0" layoutY="217.0" prefHeight="30.0" prefWidth="90.0" promptText="TeamID" style="-fx-background-color: #FEE715FF;" />
+      <Button fx:id="showTeamsBtn" layoutX="140.0" layoutY="220.0" mnemonicParsing="false" onAction="#TrainerTeamView" text="Show Teams" />
+    </children>
+</AnchorPane>

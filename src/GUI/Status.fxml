@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" styleClass="bodybg" stylesheets="@../YourProfile.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Integration.Main">
+   <children>
+      <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="150.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/manager.jpg"/>
+         </image>
+      </ImageView>
+      <Button id="managerBtn" layoutX="163.0" layoutY="139.0" mnemonicParsing="false" onAction="#manager" style="-fx-background-color: #008080;" text="Manager" />
+      <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="50.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Admin.jpg" />
+         </image>
+      </ImageView>
+      <Button id="adminBtn" layoutX="69.0" layoutY="139.0" mnemonicParsing="false" onAction="#admin" style="-fx-background-color: #008080;" text="Admin" />
+      <ImageView fitHeight="71.0" fitWidth="71.0" layoutX="167.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Referee.jpg" />
+         </image>
+      </ImageView>
+      <Button id="refereeBtn" layoutX="167.0" layoutY="274.0" mnemonicParsing="false" onAction="#referee" style="-fx-background-color: #008080;" text="Referee" />
+      <ImageView fitHeight="71.0" fitWidth="71.0" layoutX="60.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/president.jpeg" />
+         </image>
+      </ImageView>
+      <Button id="presidentBtn" layoutX="61.0" layoutY="274.0" mnemonicParsing="false" onAction="#president" style="-fx-background-color: #008080;" text="President" />
+      <ImageView fitHeight="71.0" fitWidth="71.0" layoutX="262.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Doctor.jpeg" />
+         </image>
+      </ImageView>
+      <Button id="medicalBtn" layoutX="254.0" layoutY="139.0" mnemonicParsing="false" onAction="#medicalStaff" style="-fx-background-color: #008080;" text="Medical Staff" />
+      <ImageView fitHeight="71.0" fitWidth="119.0" layoutX="346.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/trainer.jpg" />
+         </image>
+      </ImageView>
+      <Button id="trainerBtn" layoutX="377.0" layoutY="139.0" mnemonicParsing="false" onAction="#trainer" style="-fx-background-color: #008080;" text="Trainer" />
+      <ImageView fitHeight="90.0" fitWidth="100.0" layoutX="248.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/player.jpg" />
+         </image>
+      </ImageView>
+      <Button id="playerBtn" layoutX="274.0" layoutY="274.0" mnemonicParsing="false" onAction="#player" style="-fx-background-color: #008080;" text="Player" />
+      <ImageView fitHeight="71.0" fitWidth="71.0" layoutX="368.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/scout.jpg" />
+         </image>
+      </ImageView>
+      <Button id="scoutBtn" layoutX="380.0" layoutY="274.0" mnemonicParsing="false" onAction="#scout" style="-fx-background-color: #008080;" text="Scout" />
+      <ImageView fitHeight="71.0" fitWidth="71.0" layoutX="61.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/ambassador.jpeg" />
+         </image>
+      </ImageView>
+      <Button id="ambassadorBtn" layoutX="55.0" layoutY="414.0" mnemonicParsing="false" onAction="#ambassador" style="-fx-background-color: #008080;" text="Ambassador" />
+      <ImageView fitHeight="112.0" fitWidth="114.0" layoutX="139.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Spectator.jpeg" />
+         </image>
+      </ImageView>
+      <Button id="spectatorBtn" layoutX="161.0" layoutY="414.0" mnemonicParsing="false" onAction="#spectator" style="-fx-background-color: #008080;" text="Spectator" />
+   </children>
+</AnchorPane>
